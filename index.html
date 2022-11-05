@@ -26,22 +26,23 @@
 
   <body>
 
+    <!--Home/Splash Section-->
     <section class="d-flex flex-column justify-content-center mb-3">
       <div class="card bg-transparent">
         <img class="splash card-img" src="https://source.unsplash.com/random/1920x1080" alt="random image">
         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-          <div class="bg-dark rounded d-flex flex-column justify-content-center align-items-center p-3">
+          <div class="bg-transparent rounded d-flex flex-column justify-content-center align-items-center p-3">
             <h1 class="card-title text-warning">Landing Page</h1>
             <h2 class="card-text text-center">
               a Long, Single Page:</br>
-              <small class="text-muted">
-              Like a one-way street, 
+              <small class="text-light bg-transparent rounded">
+                Like a one-way street,
               <i class="bi bi-arrow-down"></i>
               <i class="bi bi-car-front"></i>
               </br> 
+              with a view
               <i class="px-1 bi bi-card-image"></i>
               <i class="px-1 bi bi-camera2"></i>
-              with a view
               </small>
             </h2>
             <a class="btn btn-primary my-2" href="#cards">See More</a>
@@ -50,15 +51,152 @@
       </div>
     </section>
 
-    <section class="bg-primary d-flex justify-content-center my-3"
+    <!--Navbar-->
+    <nav class="nav sticky-top nav-pills nav-fill bg-dark container-fluid">
+      <a class="nav-link" href="#cards">
+        <h3 class="text-warning">Feature Cards</h3>
+      </a>
+      <a class="nav-link" href="#gallery">
+        <h3 class="text-warning">Content Gallery</h3>
+      </a>
+      <a class="nav-link" href="#faq">
+        <h3 class="text-warning">Information/F.A.Q.s</h3>
+      </a>
+      <a class="nav-link" href="#contact">
+        <h3 class="text-warning">About/Contact</h3>
+      </a>
+      <a class="nav-link" aria-current="home" href="#">
+        <h3 class="text-warning">
+          <i class="bi bi-balloon"></i>
+        </h3>
+      </a>
+    </nav>
+
+
+    <section class="bg-transparent d-flex flex-column justify-content-center my-3"
       id="cards">
-      <h1>Card Section</h1>
+
+      <h1 class="mt-5 text-center text-warning">Feature Cards - Section 1</h1>
+
+      <div class="container">
+
+        <!--Row 1-->
+        <h2 class="text-muted text-center">Cards With Button Links:</h2>
+        <div class="row d-flex justify-content-center">
+          
+          <!--Card 1-->
+          <div class="card bg-transparent text-center col-sm-3">
+            <div class="card-header bg-dark text-warning">
+              <h2>Link to Something</h2>
+            </div>
+            <div class="card-body bg-secondary text-light">
+              <h5 class="card-title">Another Site...</h5>
+              <p class="card-text">
+              https://gesty.dev
+              </p>
+              <a href="https://gesty.dev" target="_blank" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+
+           <!--Card 2-->
+          <div class="card bg-transparent text-center col-sm-3">
+            <div class="card-header bg-dark text-warning">
+              <h2>Link to Something</h2>
+            </div>
+            <div class="card-body bg-secondary text-light">
+              <h5 class="card-title">a Specific Item...</h5>
+              <p class="card-text">
+              a Laptop on Amazon
+              </p>
+              <a target="_blank" href="https://a.co/d/31FMgpC" class="btn btn-primary">View</a>
+            </div>
+          </div>
+
+          <!--Card 3-->
+          <div class="card bg-transparent text-center col-sm-3">
+            <div class="card-header bg-dark text-warning">
+              <h2>Link to Something</h2>
+            </div>
+            <div class="card-body bg-secondary text-light">
+              <h5 class="card-title">on This Page...</h5>
+              <p class="card-text">
+              Contact Section (page bottom)
+              </p>
+              <a href="#contact" class="btn btn-primary">About</a>
+            </div>
+          </div>
+
+        </div> <!--end of row 1-->
+
+
+        <!--Row 2-->
+        <h2 class="text-muted text-center mt-5">Image Cards:</h2>
+        <div class="row d-flex justify-content-center">
+
+          <!--Card 1-->
+          <div class="card bg-transparent text-center col-sm-3 py-2">
+            <img src="https://source.unsplash.com/random/300x300" class="card-img-top" alt="">
+            <div class="card-body bg-dark text-light">
+              <h3 class="card-title text-warning">Image card</h3>
+              <p class="card-text">
+              With a Caption Box <b>on the Bottom</b>
+              </p>
+            </div>
+          </div>
+
+          <!--Card 2-->
+          <div class="card bg-transparent text-center col-sm-3 py-2">
+            <img src="https://source.unsplash.com/random/300x301" class="card-img-top" alt="">
+            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+              <h3 class="card-title text-warning">Image Card</h3>
+              <p class="card-text">With no Caption Box</p>
+            </div>
+          </div>
+
+
+          <!--Card 3-->
+          <div class="card bg-transparent text-center col-sm-3 py-2">
+            <div class="card-body bg-dark text-light">
+              <h3 class="card-title text-warning">Image card</h3>
+              <p class="card-text">
+              With a Caption Box <b>on Top</b>
+              </p>
+            </div>
+            <img src="https://source.unsplash.com/random/301x300" class="card-img-bottom" alt="">
+          </div>
+
+
+          <!--Card 4-->
+          <div class="card bg-transparent mt-5" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <img src="https://source.unsplash.com/random/301x301" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h3 class="card-title text-warning">Image Card</h3>
+                  <p class="card-text">With a Transparent Caption Box</p>
+                  <p class="card-text">Horizontal Left</p>
+                  <p class="card-text"><small class="text-muted">(Horizontal Right also Available)</small></p>
+                  <p class="card-text"><small class="text-muted">(Shown in Content Gallery Section)</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div> <!--end of cards container-->
+
     </section>
 
 
     <section class="bg-transparent d-flex flex-column justify-content-center align-items-center my-5"
-      id="photo">
-      <h1 class="text-warning">Photo Gallery</h1>
+      id="gallery">
+      <h1 class="text-warning mt-5">Content Gallery</h1>
+      <h2 class="text-muted">Photos Showcase:</h2>
 
       <div class="card mb-3 container-fluid bg-transparent">
         <div class="row g-0">
@@ -133,21 +271,21 @@
 
 
     <section class="h-100 bg-transparent d-flex flex-column justify-content-center align-items-center my-3"
-      id="information">
-      <h1 class="text-warning">Information Accordion</h1>
+      id="faq">
+      <h1 class="text-warning">FAQ/Information Accordion</h1>
+      <h2 class="text-muted">Answer Frequently Asked Questions in an Interactive Accordion:</h2>
       <div class="container mb-5">
-        <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordion">
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingOne">
               <button class="accordion-button bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Information Section Item 1
               </button>
             </h4>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
               <div class="accordion-body text-dark text-center">
-                <p>
-                3 wolf moon XOXO +1 sartorial letterpress kinfolk voluptate cred scenester drinking vinegar. Thundercats qui narwhal labore ea, williamsburg ut aute tote bag DIY copper mug. Meggings cornhole air plant coloring book, praxis sustainable distillery health goth jianbing id pop-up DIY qui excepteur shoreditch. Snackwave keffiyeh edison bulb cloud bread cardigan incididunt messenger bag listicle asymmetrical truffaut ea.
-                </p>
+                <p>I'm baby hella pinterest direct trade truffaut, activated charcoal brunch venmo copper mug knausgaard butcher sartorial. Irure retro tote bag disrupt, big mood man bun qui roof party helvetica fugiat hell of mlkshk dolor direct trade sartorial. Cupidatat artisan lorem nostrud ullamco cornhole vexillologist poutine. Church-key yr vinyl activated charcoal tousled.</p>
+                <p>3 wolf moon XOXO +1 sartorial letterpress kinfolk voluptate cred scenester drinking vinegar. Thundercats qui narwhal labore ea, williamsburg ut aute tote bag DIY copper mug. Meggings cornhole air plant coloring book, praxis sustainable distillery health goth jianbing id pop-up DIY qui excepteur shoreditch. Snackwave keffiyeh edison bulb cloud bread cardigan incididunt messenger bag listicle asymmetrical truffaut ea.</p>
               </div>
             </div>
           </div>
@@ -157,12 +295,13 @@
                 Information Section Item 2
               </button>
             </h4>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
               <div class="accordion-body text-dark text-center">
-                <p>I'm baby poke seitan cliche godard, coloring book hoodie mixtape normcore.
+                <p>Poke seitan cliche godard, coloring book hoodie mixtape normcore.
                 Id vice prism, iPhone big mood non normcore af ut scenester exercitation DIY.
                 Mlkshk ex live-edge retro pitchfork vice vexillologist cardigan voluptate.
                 Dolore VHS -edge booth viral ea palo santo.</p>
+                <p>Forage schlitz party semiotics green juice chartreuse consectetur vaporware green juice fixie, irony small batch nisi try-hard paleo offal brunch eiusmod.</p>
               </div>
             </div>
           </div>
@@ -172,12 +311,15 @@
                 Information Section Item 3
               </button>
             </h4>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
               <div class="accordion-body text-dark text-center">
-              Stumptown incididunt fingerstache bushwick selfies kombucha meh pork belly.
-              Same heirloom adaptogen axe dolore, sustainable tote bag selfies meggings whatever.
-              Biodiesel ugh aliquip direct trade poutine brunch.
-              Crucifix DSA godard ut live synth church-key eiusmod artisan.  
+                <p>Stumptown incididunt fingerstache bushwick selfies kombucha meh pork belly.
+                Same heirloom adaptogen axe dolore, sustainable tote bag selfies meggings whatever.
+                Biodiesel ugh aliquip direct trade poutine brunch.
+                Crucifix DSA godard ut live synth church-key eiusmod artisan.  
+                </p>
+                <p>Iceland cardigan sed semiotics, cupidatat selfies pok pok voluptate. Migas shoreditch eiusmod ugh austin irure. Irure yr fugiat XOXO pug dolore JOMO chillwave seitan. Retro af blog locavore biodiesel deserunt incididunt keytar lorem gentrify. Wolf chambray vape food truck paleo cillum yuccie direct trade taiyaki schlitz tbh hammock. Venmo vibecession mollit retro consequat tote bag.</p>
+                <p>Tbh fam hammock fashion axe yuccie craft beer tilde. Enim tumeric franzen kitsch fingerstache af. Paleo laboris viral, DSA +1 aute kombucha af gentrify gastropub trust fund. Try-hard lomo adipisicing gluten-free XOXO. Cupidatat wayfarers helvetica, craft beer dreamcatcher vibecession air plant ethical forage typewriter. Humblebrag literally helvetica YOLO.</p>
               </div>
             </div>
           </div>
@@ -186,10 +328,22 @@
 
     </section>
 
-    <section class="bg-danger d-flex justify-content-center my-3"
-      id="cards">
+    <section class="bg-success d-flex flex-column justify-content-center align-items-center my-3"
+      id="contact">
+
       <h1>About/Contact Section</h1>
+
     </section>
+
+    <div class="d-flex justify-content-center">
+      <a class="mt-5 text-decoration-none" href="#">
+        <h2 class="text-warning">
+          <i class="bi bi-arrow-up"></i>
+          <i class="bi bi-balloon-fill"></i>
+        </h2>
+      </a>
+    </div>
+
 
 
 
