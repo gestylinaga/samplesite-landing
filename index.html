@@ -26,26 +26,21 @@
 
   <body>
 
-    <!--Home/Splash Section-->
+    <!--Splash Section-->
     <section class="d-flex flex-column justify-content-center mb-3">
       <div class="card bg-transparent">
+        <!--
         <img class="splash card-img" src="https://source.unsplash.com/random/1920x1080" alt="random image">
+        -->
+        <img class="splash card-img" src="./imgs/splash.jpg" alt="Sample Splash Image">
         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
           <div class="bg-transparent rounded d-flex flex-column justify-content-center align-items-center p-3">
-            <h1 class="card-title text-warning">Landing Page</h1>
-            <h2 class="card-text text-center">
-              a Long, Single Page:</br>
-              <small class="text-light bg-transparent rounded">
-                Like a one-way street,
-              <i class="bi bi-arrow-down"></i>
-              <i class="bi bi-car-front"></i>
-              </br> 
-              with a view
-              <i class="px-1 bi bi-card-image"></i>
-              <i class="px-1 bi bi-camera2"></i>
-              </small>
-            </h2>
-            <a class="btn btn-primary my-2" href="#cards">See More</a>
+            <h1 class="text-warning">Sample Site</h1>
+            <h3 class="text-light">
+              <i class="bi bi-arrow-up-short"></i>
+              your name here
+            </h3>
+            <a class="btn btn-primary my-2" href="#home">See More</a>
           </div>
         </div>
       </div>
@@ -53,6 +48,12 @@
 
     <!--Navbar-->
     <nav class="nav sticky-top nav-pills nav-fill bg-dark container-fluid">
+      <a class="nav-link" href="#home">
+        <h3 class="text-warning">Home</h3>
+      </a>
+      <a class="nav-link" href="#about">
+        <h3 class="text-warning">About</h3>
+      </a>
       <a class="nav-link" href="#cards">
         <h3 class="text-warning">Feature Cards</h3>
       </a>
@@ -63,7 +64,7 @@
         <h3 class="text-warning">Information/F.A.Q.s</h3>
       </a>
       <a class="nav-link" href="#contact">
-        <h3 class="text-warning">About/Contact</h3>
+        <h3 class="text-warning">Contact</h3>
       </a>
       <a class="nav-link" aria-current="home" href="#">
         <h3 class="text-warning">
@@ -72,65 +73,57 @@
       </a>
     </nav>
 
+    <section class="bg-transparent d-flex flex-column justify-content-center my-3"
+      id="home"
+      style="height:100vh;">
+      <h1 class="mt-5 card-title text-warning text-center">Landing Page -</h1>
+      <div class="container">
+        <h2 class="card-text text-center text-warning">
+          - a Long, Single Page:</br>
+          <small class="text-light bg-transparent rounded">
+          <i class="bi bi-arrow-down"></i>
+          <i class="bi bi-car-front"></i>
+            - like a one-way street...
+          </br>
+          ...with a view
+          <i class="px-1 bi bi-card-image"></i>
+          <i class="px-1 bi bi-camera2"></i>
+          </small>
+        </h2>
+        <p class="text-muted text-center">Views are separated into 'sections' instead of 'pages'</p>
+        <p class="text-muted text-center">
+        To Navigate:</br>
+          <small>
+            Scroll with the Mouse Wheel
+            <i class="bi bi-mouse"></i>
+            </br>
+            or Use the Arrow Keys
+            <i class="bi bi-arrow-down-up"></i>
+            </br>
+            or Click the Navbar Links at the Top
+            <i class="bi bi-arrow-up-left"></i>
+          </small>
+        </p>
+      </div>
+
+    </section>
+
+
+    <section class="bg-transparent d-flex flex-column justify-content-center my-3"
+      id="about">
+      <h1 class="mt-5 text-center text-warning">About - Section 1</h1>
+    </section>
+
 
     <section class="bg-transparent d-flex flex-column justify-content-center my-3"
       id="cards">
 
-      <h1 class="mt-5 text-center text-warning">Feature Cards - Section 1</h1>
+      <h1 class="mt-5 text-center text-warning">Feature Cards - Section 2</h1>
 
       <div class="container">
 
         <!--Row 1-->
-        <h2 class="text-muted text-center">Cards With Button Links:</h2>
-        <div class="row d-flex justify-content-center">
-          
-          <!--Card 1-->
-          <div class="card bg-transparent text-center col-sm-3">
-            <div class="card-header bg-dark text-warning">
-              <h2>Link to Something</h2>
-            </div>
-            <div class="card-body bg-secondary text-light">
-              <h5 class="card-title">Another Site...</h5>
-              <p class="card-text">
-              https://gesty.dev
-              </p>
-              <a href="https://gesty.dev" target="_blank" class="btn btn-primary">Go</a>
-            </div>
-          </div>
-
-           <!--Card 2-->
-          <div class="card bg-transparent text-center col-sm-3">
-            <div class="card-header bg-dark text-warning">
-              <h2>Link to Something</h2>
-            </div>
-            <div class="card-body bg-secondary text-light">
-              <h5 class="card-title">a Specific Item...</h5>
-              <p class="card-text">
-              a Laptop on Amazon
-              </p>
-              <a target="_blank" href="https://a.co/d/31FMgpC" class="btn btn-primary">View</a>
-            </div>
-          </div>
-
-          <!--Card 3-->
-          <div class="card bg-transparent text-center col-sm-3">
-            <div class="card-header bg-dark text-warning">
-              <h2>Link to Something</h2>
-            </div>
-            <div class="card-body bg-secondary text-light">
-              <h5 class="card-title">on This Page...</h5>
-              <p class="card-text">
-              Contact Section (page bottom)
-              </p>
-              <a href="#contact" class="btn btn-primary">About</a>
-            </div>
-          </div>
-
-        </div> <!--end of row 1-->
-
-
-        <!--Row 2-->
-        <h2 class="text-muted text-center mt-5">Image Cards:</h2>
+        <h2 class="text-muted text-center">Image Cards:</h2>
         <div class="row d-flex justify-content-center">
 
           <!--Card 1-->
@@ -184,9 +177,58 @@
             </div>
           </div>
 
+        </div> <!--end of row 1-->
+
+        <!--Row 2-->
+        <h2 class="text-muted text-center mt-5">Cards With Button Links:</h2>
+        <div class="row d-flex justify-content-center">
+          
+          <!--Card 1-->
+          <div class="card bg-transparent text-center col-sm-3">
+            <div class="card-header bg-dark text-warning">
+              <h2>Link to Another Site</h2>
+            </div>
+            <div class="card-body bg-secondary text-light">
+              <h5 class="card-title">To My Website</h5>
+              <p class="card-text">
+              https://gesty.dev
+              </p>
+              <a href="https://gesty.dev" target="_blank" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+
+           <!--Card 2-->
+          <div class="card bg-transparent text-center col-sm-3">
+            <div class="card-header bg-dark text-warning">
+              <h2>Link to Amazon</h2>
+            </div>
+            <div class="card-body bg-secondary text-light">
+              <h5 class="card-title">a Specific Item...</h5>
+              <p class="card-text">
+              a Laptop 
+              </p>
+              <a target="_blank" href="https://a.co/d/31FMgpC" class="btn btn-primary">View</a>
+            </div>
+          </div>
+
+          <!--Card 3-->
+          <div class="card bg-transparent text-center col-sm-3">
+            <div class="card-header bg-dark text-warning">
+              <h2>Link to this Page</h2>
+            </div>
+            <div class="card-body bg-secondary text-light">
+              <h5 class="card-title">Contact Section</h5>
+              <p class="card-text">
+              the last section on the page
+              </p>
+              <a href="#contact" class="btn btn-primary">Contact</a>
+            </div>
+          </div>
+
+        </div> <!--end of row 1-->
 
 
-        </div>
+
 
       </div> <!--end of cards container-->
 
@@ -195,8 +237,8 @@
 
     <section class="bg-transparent d-flex flex-column justify-content-center align-items-center my-5"
       id="gallery">
-      <h1 class="text-warning mt-5">Content Gallery</h1>
-      <h2 class="text-muted">Photos Showcase:</h2>
+      <h1 class="text-warning mt-5">Content Gallery - Section 3</h1>
+      <h2 class="text-muted">Showcase Photos:</h2>
 
       <div class="card mb-3 container-fluid bg-transparent">
         <div class="row g-0">
@@ -272,7 +314,7 @@
 
     <section class="h-100 bg-transparent d-flex flex-column justify-content-center align-items-center my-3"
       id="faq">
-      <h1 class="text-warning">FAQ/Information Accordion</h1>
+      <h1 class="text-warning">FAQ/Information Accordion - Section 4</h1>
       <h2 class="text-muted">Answer Frequently Asked Questions in an Interactive Accordion:</h2>
       <div class="container mb-5">
         <div class="accordion" id="accordion">
@@ -328,13 +370,14 @@
 
     </section>
 
+
     <section class="bg-success d-flex flex-column justify-content-center align-items-center my-3"
       id="contact">
-
-      <h1>About/Contact Section</h1>
-
+      <h1>Contact - Section 5</h1>
     </section>
 
+
+    <!--Top Link-->
     <div class="d-flex justify-content-center">
       <a class="mt-5 text-decoration-none" href="#">
         <h2 class="text-warning">
@@ -343,8 +386,6 @@
         </h2>
       </a>
     </div>
-
-
 
 
     <!-- Bootstrap JS -->
