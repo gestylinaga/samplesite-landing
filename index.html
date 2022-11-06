@@ -29,7 +29,7 @@
     <!--Splash Section-->
     <section class="d-flex flex-column justify-content-center mb-3">
       <div class="card bg-transparent">
-        <!--
+        <!-- Random Image
         <img class="splash card-img" src="https://source.unsplash.com/random/1920x1080" alt="random image">
         -->
         <img class="splash card-img" src="./imgs/splash.jpg" alt="Sample Splash Image">
@@ -46,33 +46,69 @@
       </div>
     </section>
 
-    <!--Navbar-->
-    <nav class="nav sticky-top nav-pills nav-fill bg-dark container-fluid">
-      <a class="nav-link" href="#home">
-        <h3 class="text-warning">Home</h3>
-      </a>
-      <a class="nav-link" href="#about">
-        <h3 class="text-warning">About</h3>
-      </a>
-      <a class="nav-link" href="#cards">
-        <h3 class="text-warning">Feature Cards</h3>
-      </a>
-      <a class="nav-link" href="#gallery">
-        <h3 class="text-warning">Content Gallery</h3>
-      </a>
-      <a class="nav-link" href="#faq">
-        <h3 class="text-warning">Information/F.A.Q.s</h3>
-      </a>
-      <a class="nav-link" href="#contact">
-        <h3 class="text-warning">Contact</h3>
-      </a>
-      <a class="nav-link" aria-current="home" href="#">
-        <h3 class="text-warning">
-          <i class="bi bi-balloon"></i>
-        </h3>
-      </a>
-    </nav>
 
+    <!--Navbar-->
+    <nav class="nav navbar navbar-expand-lg sticky-top nav-pills nav-fill bg-transparent">
+      <div class="container-fluid">
+        <!--Brand-->
+        <a class="text-center text-decoration-none text-warning" href="./">
+          <h2>Sample Site</h2>
+          <h3 class="text-light">
+            <small>
+              <i class="bi bi-arrow-up-short"></i>
+              your name here
+            </small>
+          </h3>
+        </a>
+        <!--Collapse Button-->
+        <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-mouse"></i>
+        </button>
+        <!--Navmenu Links-->
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">
+                <h3 class="text-warning">Home</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <h3 class="text-warning">About</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cards">
+                <h3 class="text-warning">Cards</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">
+                <h3 class="text-warning">Gallery</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">
+              <h3 class="text-warning">FAQ</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <h3 class="text-warning">Contact</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Balloon Top Link-->
+        <a class="nav-link" aria-current="home" href="#">
+          <h3 class="text-warning"><i class="bi bi-balloon"></i></h3>
+        </a>
+      </div>
+    </nav> <!--end of navbar-->
+
+
+    <!--Home Section-->
     <section class="bg-transparent d-flex flex-column justify-content-center my-3"
       id="home"
       style="height:100vh;">
@@ -90,7 +126,6 @@
           <i class="px-1 bi bi-camera2"></i>
           </small>
         </h2>
-        <p class="text-muted text-center">Views are separated into 'sections' instead of 'pages'</p>
         <p class="text-muted text-center">
         To Navigate:</br>
           <small>
@@ -104,26 +139,58 @@
             <i class="bi bi-arrow-up-left"></i>
           </small>
         </p>
+
+        <p class="text-center">Views are separated into 'sections' instead of 'pages'</p>
+
+        <p class="card-text text-center mt-5">
+          Made by: <a class="text-decoration-none" href="https://gesty.dev">gesty<i class="bi bi-arrow-return-left"></i></a>
+        </p>
+
+      </div>
+    </section>
+
+
+    <!--About Section-->
+    <section class="bg-transparent d-flex flex-column justify-content-center my-3"
+      id="about" style="height: 100vh;">
+
+      <h1 class="mt-5 text-center text-warning">About Me</h1>
+      <h3 class="text-muted text-center">a Section to talk <b>About</b> yourself...</h3>
+
+      <div class="card bg-transparent mt-5 d-flex justify-content-center align-self-center" >
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://source.unsplash.com/random/500x500" class="img-fluid rounded-start p-2" alt="Random Image">
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <h3 class="card-title text-warning">Bio</h3>
+              <p class="card-text">I'm baby kale chips banjo organic fashion you probably haven't heard of them scenester bespoke.</p>
+              <p class="card-text">Leggings skateboard pitchfork tilde, microdosing austin bag roof party gluten-free vexillologist fam.</p>
+              <h3 class="text-warning">About this Section:</h3>
+              <p class="card-text">This section contains dummy/filler text to emulate a "Bio/About Me" section</p>
+              <h3 class="text-warning">About this Landing Page:</h3>
+              <p class="card-text"><small class="text-muted">
+                Made by: <a class="text-decoration-none" href="https://gesty.dev">gesty <i class="bi bi-arrow-return-left"></i></a></br>
+                Text from: <a class="text-decoration-none" href="https://hipsum.co">hipsum.co</a></br>
+                Images randomly generated from: <a class="text-decoration-none" href="https://unsplash.com">unsplash.com</a>
+              </small></p>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
 
 
-    <section class="bg-transparent d-flex flex-column justify-content-center my-3"
-      id="about">
-      <h1 class="mt-5 text-center text-warning">About - Section 1</h1>
-    </section>
-
-
+    <!--Cards Section-->
     <section class="bg-transparent d-flex flex-column justify-content-center my-3"
       id="cards">
-
-      <h1 class="mt-5 text-center text-warning">Feature Cards - Section 2</h1>
-
+      <h1 class="mt-5 text-center text-warning">Feature Cards</h1>
       <div class="container">
 
         <!--Row 1-->
-        <h2 class="text-muted text-center">Image Cards:</h2>
+        <h2 class="text-muted text-center mt-3">Image Cards to Showcase Photos:</h2>
         <div class="row d-flex justify-content-center">
 
           <!--Card 1-->
@@ -142,7 +209,7 @@
             <img src="https://source.unsplash.com/random/300x301" class="card-img-top" alt="">
             <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
               <h3 class="card-title text-warning">Image Card</h3>
-              <p class="card-text">With no Caption Box</p>
+              <p class="card-text">With Overlay Caption</p>
             </div>
           </div>
 
@@ -158,29 +225,10 @@
             <img src="https://source.unsplash.com/random/301x300" class="card-img-bottom" alt="">
           </div>
 
-
-          <!--Card 4-->
-          <div class="card bg-transparent mt-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-8">
-                <img src="https://source.unsplash.com/random/301x301" class="img-fluid rounded-start" alt="">
-              </div>
-              <div class="col-md-4">
-                <div class="card-body">
-                  <h3 class="card-title text-warning">Image Card</h3>
-                  <p class="card-text">With a Transparent Caption Box</p>
-                  <p class="card-text">Horizontal Left</p>
-                  <p class="card-text"><small class="text-muted">(Horizontal Right also Available)</small></p>
-                  <p class="card-text"><small class="text-muted">(Shown in Content Gallery Section)</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div> <!--end of row 1-->
 
         <!--Row 2-->
-        <h2 class="text-muted text-center mt-5">Cards With Button Links:</h2>
+        <h2 class="text-muted text-center mt-5">Simple Cards With Button Links:</h2>
         <div class="row d-flex justify-content-center">
           
           <!--Card 1-->
@@ -193,7 +241,7 @@
               <p class="card-text">
               https://gesty.dev
               </p>
-              <a href="https://gesty.dev" target="_blank" class="btn btn-primary">Go</a>
+              <a href="https://gesty.dev" target="_blank" class="btn btn-primary">Gesty</a>
             </div>
           </div>
 
@@ -205,7 +253,7 @@
             <div class="card-body bg-secondary text-light">
               <h5 class="card-title">a Specific Item...</h5>
               <p class="card-text">
-              a Laptop 
+              a new Laptop 
               </p>
               <a target="_blank" href="https://a.co/d/31FMgpC" class="btn btn-primary">View</a>
             </div>
@@ -225,21 +273,53 @@
             </div>
           </div>
 
-        </div> <!--end of row 1-->
+        </div> <!--end of row 2-->
 
+        <!--Row 2-->
+        <h2 class="text-muted text-center mt-5">Cards With Images & Button Links:</h2>
+        <div class="row d-flex justify-content-center">
 
+          <!--Card 1-->
+          <div class="card bg-transparent text-center col-sm-3">
+            <img class="card-img-top" src="https://source.unsplash.com/random/400x401" alt="Random Image">
+            <div class="card-body bg-secondary text-light">
+              <h5 class="card-title">to unsplash.com</h5>
+              <p class="card-text">
+              source of the random images used on this page
+              </p>
+              <a href="https://unsplash.com" target="_blank" class="btn btn-primary">unsplash</a>
+            </div>
+          </div>
+
+          <!--Card 2-->
+          <div class="card bg-transparent text-center col-sm-3">
+            <img class="card-img-top" src="https://source.unsplash.com/random/401x400" alt="Random Image">
+            <div class="card-body bg-secondary text-light">
+              <h5 class="card-title">to hipsum.co</h5>
+              <p class="card-text">
+              source of the 'dummy' text used on this page
+              </p>
+              <a href="https://hipsum.co" target="_blank" class="btn btn-primary">hipsum</a>
+            </div>
+          </div>
+
+        </div>
 
 
       </div> <!--end of cards container-->
 
+
     </section>
 
 
+    <!--Gallery Section-->
     <section class="bg-transparent d-flex flex-column justify-content-center align-items-center my-5"
       id="gallery">
-      <h1 class="text-warning mt-5">Content Gallery - Section 3</h1>
-      <h2 class="text-muted">Showcase Photos:</h2>
+      <h1 class="text-warning mt-5">Content Gallery</h1>
 
+
+      <!--Photo Showcase-->
+      <h2 class="text-muted">to Showcase Photos:</h2>
       <div class="card mb-3 container-fluid bg-transparent">
         <div class="row g-0">
           <div class="col-md-4">
@@ -307,21 +387,64 @@
           </div>
         </div>
       </div>
+      <!--end photo showcase-->
+
+      <!--Video Showcase-->
+      <h2 class="text-muted mt-5">or Showcase Videos:</h2>
+
+      <div class="container">
+
+        <h3 class="text-warning text-center mt-5">from YouTube</h3>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe 
+            src="https://www.youtube.com/embed/e6k4-S4HlHk" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            frameborder="0" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <h3 class="text-warning text-center mt-5">or Vimeo</h3>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe 
+            src="https://player.vimeo.com/video/296496488?h=5ed9adbb44&color=f67c5c&title=0&byline=0&portrait=0" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        <h3 class="text-warning text-center mt-5">or Twitch</h3>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe 
+            src="https://clips.twitch.tv/embed?clip=RepleteEnthusiasticMageCeilingCat&parent=https://gesty.dev/samplesite-landing"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+
 
     </section>
 
 
-
-    <section class="h-100 bg-transparent d-flex flex-column justify-content-center align-items-center my-3"
-      id="faq">
-      <h1 class="text-warning">FAQ/Information Accordion - Section 4</h1>
+    <!--FAQ Section-->
+    <section class="bg-transparent d-flex flex-column justify-content-center align-items-center my-3"
+      id="faq" style="height: 100vh;">
+      <h1 class="text-warning">FAQ/Information Accordion</h1>
       <h2 class="text-muted">Answer Frequently Asked Questions in an Interactive Accordion:</h2>
       <div class="container mb-5">
         <div class="accordion" id="accordion">
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingOne">
               <button class="accordion-button bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Information Section Item 1
+                FAQ #1
               </button>
             </h4>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
@@ -334,7 +457,7 @@
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingTwo">
               <button class="accordion-button bg-dark text-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Information Section Item 2
+                FAQ #2
               </button>
             </h4>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
@@ -350,7 +473,7 @@
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Information Section Item 3
+                FAQ #3 
               </button>
             </h4>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
@@ -371,9 +494,10 @@
     </section>
 
 
-    <section class="bg-success d-flex flex-column justify-content-center align-items-center my-3"
+    <!--Contact Section-->
+    <section class="bg-warning d-flex flex-column justify-content-center align-items-center my-3"
       id="contact">
-      <h1>Contact - Section 5</h1>
+      <h1>Contact</h1>
     </section>
 
 

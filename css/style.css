@@ -6,6 +6,7 @@
 
 h1, h2, h3 {
   font-family: "Caveat", cursive;
+  text-shadow: 1px 1px 5px black;
 }
 
 p {
