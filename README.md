@@ -9,10 +9,3 @@ a **Sample** Landing Page/**Site**
 by: [Gesty Linaga](https://gesty.dev) 🏄
 
 All images 📷 from [unsplash.com](https://unsplash.com)
-
-```javascript
-/* TODO:
-  - Animations
-  - Mobile/Reactivity
-*/
-```
