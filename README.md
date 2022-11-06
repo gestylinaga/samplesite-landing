@@ -12,16 +12,7 @@ All images 📷 from [unsplash.com](https://unsplash.com)
 
 ```javascript
 /* TODO:
-  - Sticky Nav
-  - Finish FAQ/Information Accordion Section
-  - Card Section
-  - Contact Section
-  - Add External Links:
-    - Youtube
-    - Twitch
-    - Instagram
-    - Amazon
-  - APIs for real-time external stats/links?
   - Animations
+  - Mobile/Reactivity
 */
 ```
