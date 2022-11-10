@@ -14,9 +14,12 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenLeft = document.querySelectorAll('.hidden-left');
 hiddenLeft.forEach((el) => observer.observe(el));
+
 const hiddenRight = document.querySelectorAll('.hidden-right');
 hiddenRight.forEach((el) => observer.observe(el));
+
 const hiddenBelow = document.querySelectorAll('.hidden-below');
 hiddenBelow.forEach((el) => observer.observe(el));
+
 const hiddenAbove = document.querySelectorAll('.hidden-above');
 hiddenAbove.forEach((el) => observer.observe(el));

@@ -87,4 +87,11 @@ section {
   transition-delay: 700ms;
 }
 
+@media (max-width: 800px) {
+  .splash {
+    width: 100vw;
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
